@@ -1,1 +1,19 @@
 @import "tailwindcss";
+:root {
+  /* Define your variables here as standard CSS */
+  --wander-teal: #015f74;
+  --wander-dark-teal: rgba(2, 114, 139, 0.95);
+  --wander-yellow: #ffd400;
+  --wander-yellow-hover: #f0c300;
+  
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-cormorant: 'Cormorant', serif;
+}
+
+/* Global Styles */
+body {
+  background-color: #000;
+  color: white;
+  /* Use the variable directly in standard CSS syntax */
+  font-family: var(--font-montserrat);
+}
