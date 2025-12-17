@@ -1,6 +1,7 @@
 import React from 'react';
 import { ReactTyped } from 'react-typed';
-import headerVideo from '../assets/header_video.mp4'; 
+// Make sure this path is correct based on where you put your video
+import headerVideo from '../assets/videos/home.mp4'; 
 
 const Hero = () => {
   return (
@@ -14,10 +15,10 @@ const Hero = () => {
 
       {/* Content */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-20 w-full px-4">
-        <h1 className="text-white font-bold italic text-4xl md:text-6xl mb-4 font-montserrat">
+        <h1 className="text-white font-bold italic text-4xl md:text-6xl mb-4 font-[var(--font-montserrat)]">
           Global Community for Travelers
         </h1>
-        <div className="text-wander-yellow text-3xl md:text-5xl font-bold h-15">
+        <div className="text-[var(--wander-yellow)] text-3xl md:text-5xl font-bold h-[60px]">
           <ReactTyped
             strings={[
               "Creating Stories",
