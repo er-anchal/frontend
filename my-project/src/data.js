@@ -39,7 +39,7 @@ import card3 from './assets/images/card/card3.svg';
 import card4 from './assets/images/card/card4.svg';
 
 // Logo
-import logoImg from '../public/logo.png';
+import logoImg from '/logo.png';
 
 export const assets = {
     upcomingBanner,

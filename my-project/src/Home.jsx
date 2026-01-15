@@ -28,7 +28,7 @@ const Home = () => {
 
             <main>
                 {/* 1. Deals Section */}
-                <div className="mt-20">
+                <div>
                     <TripSlider 
                         title="Exhilarating Deals" 
                         slides={dealsData} 
