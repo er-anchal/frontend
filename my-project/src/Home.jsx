@@ -22,7 +22,7 @@ import romanticVideo from './assets/videos/romantic.mp4';
 
 const Home = () => {
     return (
-        <div className="bg-gray-50 font-var[(--font-montserrat)] text-gray-900">
+        <div className="bg-black font-var[(--font-montserrat)] text-gray-900">
             <Navbar />
             <Hero />
 

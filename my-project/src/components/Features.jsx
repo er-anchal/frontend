@@ -14,11 +14,11 @@ const Features = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {featuresData.map((card, idx) => (
-                    <div key={idx} className="relative group rounded-xl overflow-hidden aspect-[5/6] shadow-lg cursor-pointer">
+                    <div key={idx} className="relative rounded-xl overflow-hidden aspect-[5/6] shadow-lg cursor-pointer">
                         <img src={card.img} alt={card.title} className="w-full h-full object-cover" />
                         
                         {/* Overlay */}
-                        <div className="absolute inset-0 bg-white/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-6 text-center">
+                        <div className="absolute inset-0 flex flex-col justify-center items-center p-6 text-center">
                             <h3 className="text-[var(--wander-teal)] font-bold text-xl mb-4">
                                 {card.title}
                             </h3>
