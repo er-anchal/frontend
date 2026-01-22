@@ -25,7 +25,7 @@ const Navbar = () => {
     <>
       {/* Top Navigation Bar */}
       <nav 
-        className={`fixed w-full z-50 transition-all duration-300 ${
+        className={`fixed w-full z-50 transition-all duration-300 z-[9999] ${
           scrolled ? 'py-3 shadow-lg' : 'py-4'
         } ${
           mobileMenuOpen ? 'invisible opacity-0' : 'visible opacity-100'

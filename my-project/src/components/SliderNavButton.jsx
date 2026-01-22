@@ -9,11 +9,8 @@ const SliderNavButton = ({ direction, className, position = 'outside' }) => {
   let positionClasses = '';
   
   if (position === 'outside') {
-    // Original floating style (far left/right)
     positionClasses = isNext ? '-right-6 md:-right-10' : '-left-6 md:-left-10';
   } else if (position === 'on-border') {
-    // New style: Sits on the edge of the content area
-    // 'left-4' / 'right-4' places them nicely overlapping the first/last card slightly
     positionClasses = isNext ? 'right-2 md:right-4' : 'left-2 md:left-4';
   }
 

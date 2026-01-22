@@ -31,7 +31,6 @@ const VideoHeroSection = ({ slides, title, subtitle, videoSrc }) => {
               slidesPerView={1}
               navigation={{ nextEl: '.swiper-next-hero', prevEl: '.swiper-prev-hero' }}
               pagination={{ clickable: true }}
-              autoplay={{ delay: 4000 }}
               breakpoints={{
                 500: { slidesPerView: 2 },
                 768: { slidesPerView: 3 },
