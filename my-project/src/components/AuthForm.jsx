@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Navbar from "./Navbar";
 import "./AuthForm.css";
-import { Link } from "react-router-dom";
 import SignInForm from "./SignInForm";
 import SignUpForm from "./SignUpForm";
 import LeftPanel from "./LeftPanel";
@@ -31,10 +31,8 @@ const AuthForm = () => {
 
   return (
     <div className="auth-form-page">
+      <Navbar />
       <div className={`container ${isSignUpMode ? "sign-up-mode" : ""}`}>
-        <Link to="/" className="logo-link">
-          <img src="/logo.png" alt="WanderOn Logo" className="logo-img" />
-        </Link>
         {/* FORMS CONTAINER */}
         <div className="forms-container">
           <div className="signin-signup">
