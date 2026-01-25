@@ -144,7 +144,7 @@ max-width: 100%; /* Prevents horizontal scrollbar creation */
   outline: none;
   border: none;
   line-height: 1;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.1rem;
   color: #000000;
   width: 100%;
@@ -498,18 +498,34 @@ max-width: 100%; /* Prevents horizontal scrollbar creation */
     width: 130px;
     margin: 5px 0;
   }
-  
+  .auth-form-page .social-icon {
+    height: 32px;
+    width: 32px;
+    font-size: 0.8rem;
+    margin: 0 0.3rem;
+  }
 }
 
 /* =========================================
    7. SMALL MOBILE (< 570px)
    ========================================= */
 @media (max-width: 570px) {
+
   .auth-form-page form {
-    padding: 0 1.5rem;
+    padding: 1.5rem;
   }
-  .auth-form-page .input-field-wrapper {
-    max-width: 250px;
+.auth-form-page .input-field-wrapper {
+    margin: 4px 0; 
+    max-width: 280px; /* Reduced width */
+  }
+  .auth-form-page .input-field {
+    height: 38px;      
+    padding: 0 0.5rem; 
+  }
+  .auth-form-page .input-field input {
+    font-size: 0.8rem;
+    font-weight: 400; 
+    padding: 0 5px;
   }
   .auth-form-page .image {
     display: none;
