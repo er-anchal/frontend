@@ -26,10 +26,23 @@ overflow: hidden; /* Crucial: hides the 'blob' that spills out */
 margin: 0;
 padding: 0;
 max-width: 100%; /* Prevents horizontal scrollbar creation */
-z-index: 110;
 
 }
 
+/* Back Link (Top Left) */
+.auth-form-page .logo-link {
+  position: absolute;
+  width: 60px;
+  top: 20px;
+  left: 30px;
+  z-index: 100;
+  display: block; /* Ensures anchor wraps image */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.auth-form-page .logo-link:hover {
+  transform: scale(1.1);
+}
 
 /* =========================================
    2. SLIDING WHITE BOX (The Forms Container)
