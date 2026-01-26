@@ -1,5 +1,5 @@
 import React from 'react';
-import logImg from "../assets/images/log.svg";
+import logImg from "../../assets/images/log.svg";
 const LeftPanel = ({ onToggle }) => {
   return (
     <div className="panel left-panel">

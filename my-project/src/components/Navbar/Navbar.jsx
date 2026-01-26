@@ -1,74 +1,58 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import NavLogo from './NavLogo';
-import NavMenuItems from './NavMenuItems';
-import MobileMenuToggle from './MobileMenuToggle';
-import MobileMenu from './MobileMenu';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import {
+  NavLogo,
+  MobileMenuToggle,
+  MobileMenu,
+  NavbarShell,
+  NavbarDesktop,
+  useNavbarScroll,
+  useBodyScrollLock,
+} from '.';
 
 const Navbar = () => {
   const navigate = useNavigate();
-  const [scrolled, setScrolled] = useState(false);
+
+  const scrolled = useNavbarScroll(50);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const menuItems = ['Home', 'Explore', 'About', 'Blog', 'Contact', 'Login'];
+  useBodyScrollLock(mobileMenuOpen);
 
-  // Handle scroll effect
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const menuItems = ["Home", "Explore", "About", "Blog", "Contact"];
 
-  // Navigate to route
   const handleNavigation = (item) => {
-    const route = item === 'Login' ? '/login' : `/${item.toLowerCase()}`;
-    navigate(route);
+    navigate(`/${item.toLowerCase()}`);
     setMobileMenuOpen(false);
   };
 
-  // Handle sign in
   const handleSignIn = () => {
-    navigate('/login');
-    setMobileMenuOpen(false);
-  };
-
-  // Handle book now
-  const handleBookNow = () => {
-    navigate('/booking'); // Change to your booking route
+    navigate("/login");
     setMobileMenuOpen(false);
   };
 
   return (
     <>
-      {/* Top Navigation Bar */}
-      <nav 
-        className={`fixed w-full z-50 transition-all duration-300 ${
-          scrolled ? 'py-3 shadow-lg' : 'py-4'
-        } ${
-          mobileMenuOpen ? 'invisible opacity-0' : 'visible opacity-100'
-        }`}
-        style={{ backgroundColor: scrolled ? 'var(--wander-dark-teal)' : 'transparent' }}
-      >
-        <div className="container mx-auto px-4 flex justify-between items-center">
-          <NavLogo />
-          <NavMenuItems items={menuItems} onItemClick={handleNavigation} />
-          <MobileMenuToggle 
-            isOpen={mobileMenuOpen} 
-            onToggle={() => setMobileMenuOpen(!mobileMenuOpen)}
-          />
-        </div>
-      </nav>
+      <NavbarShell scrolled={scrolled} hidden={mobileMenuOpen}>
+        <NavLogo />
 
-      {/* Mobile Menu */}
-      <MobileMenu 
+        <NavbarDesktop
+          items={menuItems}
+          onItemClick={handleNavigation}
+          onSignIn={handleSignIn}
+        />
+
+        <MobileMenuToggle
+          isOpen={mobileMenuOpen}
+          onToggle={() => setMobileMenuOpen((prev) => !prev)}
+        />
+      </NavbarShell>
+
+      <MobileMenu
         isOpen={mobileMenuOpen}
         onClose={() => setMobileMenuOpen(false)}
         menuItems={menuItems}
         onItemClick={handleNavigation}
         onSignInClick={handleSignIn}
-        onBookNowClick={handleBookNow}
       />
     </>
   );
