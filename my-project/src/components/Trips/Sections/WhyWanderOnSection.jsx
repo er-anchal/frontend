@@ -14,8 +14,8 @@ const WhyWanderOnSection = () => {
       />
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-        {featuresData.map((usp) => (
-          <WhyWanderOnCard key={usp.id} data={usp} />
+        {featuresData.map((featuresData) => (
+          <WhyWanderOnCard key={featuresData.id} data={featuresData} />
         ))}
       </div>
     </section>

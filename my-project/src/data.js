@@ -112,7 +112,7 @@ export const featuresData = [
 ];
 
 export const destinations = [
-  { id: 1, front: kerala_card.webp, back: kerala, alt: "Kerala" },
+  { id: 1, front: kerala_card, back: kerala, alt: "Kerala" },
   { id: 2, front: himachal_card, back: himachal, alt: "Himachal" },
   { id: 3, front: rajasthan_card, back: rajasthan, alt: "Rajasthan" },
   { id: 4, front: spiti_card, back: spiti, alt: "Spiti" },
