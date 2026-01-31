@@ -36,12 +36,12 @@ import spiti from './assets/images/Indian/spiti.webp';
 //Indian card
 import himachal_card from './assets/images/Indian/himachal_card.webp';
 import kashmir_card from './assets/images/Indian/kashmir_card.webp';
-import kerala_card from './assets/images/Indian/kerala_card.webp';
 import ladakh_card from './assets/images/Indian/ladakh_card.webp';  
 import meghalaya_card from './assets/images/Indian/meghalya_card.webp';
 import rajasthan_card from './assets/images/Indian/rajasthan_card.webp';
 import uttarakhand_card from './assets/images/Indian/uttarakhand_card.webp';
 import spiti_card from './assets/images/Indian/spiti_card.webp';
+import kerala_card from './assets/images/Indian/kerala_card.webp';
 
 // Feature Cards
 import card1 from './assets/images/card/card1.svg';
@@ -49,6 +49,11 @@ import card2 from './assets/images/card/card.svg';
 import card3 from './assets/images/card/card3.svg';
 import card4 from './assets/images/card/card4.svg';
 
+// testimonials
+import traveller1 from './assets/images/travellers/anchal.jpg';
+import traveller2 from './assets/images/travellers/manash.jpg';
+import traveller3 from './assets/images/travellers/sakshi.png';
+import traveller4 from './assets/images/travellers/omkar.jpg';
 // Logo
 import logoImg from '/logo.png';
 
@@ -128,10 +133,10 @@ export const faqs = [
 ];
 
 export const testimonials = [
-  { id: 1, name: "Archana Awati", date: "30 Apr 2024", img: "./assets/images/travellers/anchal.jpg", text: "In Ladakh, find the perfect blend of culture, adventure, and serenity. December last year I decided that my next trip would be Ladakh...", link: "https://www.google.com/maps/reviews/@28.4994494,77.0749511,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURSMnJhNjlBRRAB!2m1!1s0x0:0x56b3e3ef002edbc2?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" },
-  { id: 2, name: "Sonal Shekhar Das", date: "9 May 2024", img: "./assets/images/travellers/manash.jpg", text: "I did my first solo trip in India with WanderOn. Initially I was sceptical about their Meghalaya-Kaziranga trip...", link: "https://www.google.com/maps/reviews/@28.4994494,77.0749511,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURSOTV5M1l3EAE!2m1!1s0x0:0x56b3e3ef002edbc2?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" },
-  { id: 3, name: "Shrutika Parab", date: "24 May 2024", img: "./assets/images/travellers/sakshi.png", text: "Thank you Team Wanderon for the amazing Ladakh Experience. Right from the point of making the bookings...", link: "https://www.google.com/maps/reviews/@28.4994494,77.0749511,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUN4dlpfT1JnEAE!2m1!1s0x0:0x56b3e3ef002edbc2?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" },
-  { id: 4, name: "Kartik Dilawari", date: "30 Apr 2024", img: "./assets/images/travellers/omkar.jpg", text: "After an amazing trip to Tirthan with WanderOn, I decided to go to Manali-Jispa with them...", link: "https://www.google.com/maps/contrib/116933324535405941392/place/ChIJ39f0keLjDDkRwtsuAO_js1Y/@25.5375281,69.207753,5z/data=!4m6!1m5!8m4!1e1!2s116933324535405941392!3m1!1e1?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" }
+  { id: 1, name: "Archana Awati", date: "30 Apr 2024", img: traveller1, text: "In Ladakh, find the perfect blend of culture, adventure, and serenity. December last year I decided that my next trip would be Ladakh...", link: "https://www.google.com/maps/reviews/@28.4994494,77.0749511,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURSMnJhNjlBRRAB!2m1!1s0x0:0x56b3e3ef002edbc2?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" },
+  { id: 2, name: "Sonal Shekhar Das", date: "9 May 2024", img: traveller2, text: "I did my first solo trip in India with WanderOn. Initially I was sceptical about their Meghalaya-Kaziranga trip...", link: "https://www.google.com/maps/reviews/@28.4994494,77.0749511,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURSOTV5M1l3EAE!2m1!1s0x0:0x56b3e3ef002edbc2?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" },
+  { id: 3, name: "Shrutika Parab", date: "24 May 2024", img: traveller3, text: "Thank you Team Wanderon for the amazing Ladakh Experience. Right from the point of making the bookings...", link: "https://www.google.com/maps/reviews/@28.4994494,77.0749511,17z/data=!3m1!4b1!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUN4dlpfT1JnEAE!2m1!1s0x0:0x56b3e3ef002edbc2?hl=en-US&entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" },
+  { id: 4, name: "Kartik Dilawari", date: "30 Apr 2024", img: traveller4, text: "After an amazing trip to Tirthan with WanderOn, I decided to go to Manali-Jispa with them...", link: "https://www.google.com/maps/contrib/116933324535405941392/place/ChIJ39f0keLjDDkRwtsuAO_js1Y/@25.5375281,69.207753,5z/data=!4m6!1m5!8m4!1e1!2s116933324535405941392!3m1!1e1?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" }
 ];
 
 export const footerLinks = {

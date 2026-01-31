@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import TripSlider from './components/TripSlider';
 import Features from './components/Features';
 import ContactBanner from './components/ContactBanner';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import Banner from './components/Banner';
 
 // Import Data

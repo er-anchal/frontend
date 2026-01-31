@@ -1,6 +1,9 @@
 import { footerLinks } from '../../data';
 
-export const FooterDesktop = () => {
+/**
+ * Desktop footer links component
+ */
+const FooterLinks = () => {
   return (
     <div className="hidden md:flex justify-center py-12 gap-12 xl:gap-24 border-b border-[rgb(1,95,116)] container mx-auto">
       {Object.entries(footerLinks).map(([title, links]) => (
@@ -28,3 +31,5 @@ export const FooterDesktop = () => {
     </div>
   );
 };
+
+export default FooterLinks;
